@@ -1,0 +1,17 @@
+<p>user-table works!</p>
+
+<div class="container">
+    <table>
+        <thead>
+            <th></th><th>prénom</th><th>nom</th><th>age</th>
+        </thead>
+        <tbody>
+            <tr app-user-row [userValueForChild] = "userValueForChild" 
+                *ngFor="let userValueForChild of listeUsersValue; index as i"
+                (click)="displayDetails(i)"
+            >
+            </tr>
+        </tbody>
+    </table>
+</div>
+

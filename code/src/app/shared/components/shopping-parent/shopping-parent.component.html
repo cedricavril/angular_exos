@@ -1,0 +1,13 @@
+<p>shopping-parent works!</p>
+
+
+<!-- <app-shopping-fils [numberValueForChild]="numberValue"
+    (eventEmitterForChild)="callByChild($event)">
+</app-shopping-fils> -->
+<div class="container">
+    <label>nom : <input type="string"  [(ngModel)]="currentShoppingElement.nom" ></label>
+    <label>quantite : <input type="number" [(ngModel)]="currentShoppingElement.quantite" ></label>
+    <button type="submit" (click) = "addElement()">ajouter</button>
+</div>
+
+<app-shopping-fils [listeCourseValueForChild]="listeCourseValue" (eventEmitterForChild)="delElement($event)"></app-shopping-fils>

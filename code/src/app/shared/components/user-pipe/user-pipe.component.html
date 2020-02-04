@@ -1,0 +1,10 @@
+<p>user-pipe works!</p>
+
+{{dateValue | date:'dd/MM/yyyy'}}
+<input type="number" [(ngModel)]="inputNumberValue" />
+
+<div *ngFor="let user of userList | filterByAge: inputNumberValue">
+    Name : {{user.name}} - Surname {{user.surname}} - Age {{user.age}}
+</div>
+
+<button (click)="callService()">Call Service</button>

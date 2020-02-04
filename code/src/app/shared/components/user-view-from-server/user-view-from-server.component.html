@@ -1,0 +1,6 @@
+<p>user-view-from-server works!</p>
+
+<div class="container"><legend>UserViewFromServerComponent</legend>
+    <app-user-table (sendDetails)="receiveDataFromChild($event)"></app-user-table>
+    <div class='container' ><p>{{sentDetails}}</p></div>
+</div>

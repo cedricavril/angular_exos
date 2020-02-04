@@ -1,0 +1,11 @@
+<p>shopping-fils works!</p>
+<div class="container">
+    <table>
+        <th>nom</th><th>quantite</th>
+        <tr *ngFor="let item of listeCourseValueForChild; index as i">
+            <td>{{item.nom}}</td>
+            <td>{{item.quantite}}</td>
+            <td><button (click) = callParent(i)>del</button></td>
+        </tr>
+    </table>
+</div>

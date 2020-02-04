@@ -1,0 +1,6 @@
+<p>typage-exercice works!</p>
+
+<!-- mais ne pas mettre de fonction dans le html car appelé plusieurs fois lors du cycle de vie 
+    (onInit, onChange...). -->
+<div class="container">User : {{user.name}}{{user.displayUserInConsole()}}</div>
+<button type="submit" ng-click="user.displayUserInConsole()">affiche User dans la console (à faire)</button>

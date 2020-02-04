@@ -1,0 +1,183 @@
+body {
+    background-color: #1E1E1E;
+    color: #F1F1F1;
+}
+
+.container {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    min-width: min-content;
+    padding: 4px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px 1px grey;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    a {
+        color: darkgreen;
+    }
+    a:hover {
+        color: whitesmoke;
+    }
+    
+    a:visited {
+        color: greenyellow;
+    }
+}
+
+.color-green, .topnav a {
+    color: greenyellow;
+}
+
+.topnav a:hover:after {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    content: "version de Erwan";
+    background-color: saturate($color: black, $amount: 0);
+}
+
+.color-red {
+    color: red;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.topnav .color-blue a {
+    color: #7ea8f8;
+}
+
+.topnav .color-blue a:hover:after {
+    display: block;
+    color: #7ea8f8;
+    background-color: saturate($color: black, $amount: 0);
+    content: "ma version";
+}
+
+
+input, textarea, select {
+    font-family: inherit;
+    margin: 10px;
+}
+
+.cache{
+    display: none;
+}
+
+.montre{
+    display: block;
+}
+
+.mouse-over {
+    display: block;
+    background-color: violet;
+}
+
+.text {
+    cursor: default;
+}
+
+input {
+    color: blueviolet;
+}
+
+table {
+    background-color: inherit;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #7ea8f8;
+    border-style: solid;
+    color: blueviolet;
+    width: auto;
+    margin: auto;
+}
+  
+table {
+    td, th {
+        border-width: 2px;
+        border-color: #7ea8f8;
+        border-style: solid;
+        padding: 5px;
+    }
+}
+
+table td a {
+    background-color: red;
+}
+table td a:visited {
+    background-color: blue;
+}
+
+table tr:hover {
+    background-color: #7ea8f8;
+    cursor: pointer;
+}
+
+table thead {
+    background-color: #7ea8f8;
+}
+
+i.arrow {
+    font-size: x-large;
+}
+
+i.arrow::before {
+    content: "↑";
+}
+
+button {
+    display: block;
+    margin: auto;
+}
+
+label {
+	display: block;
+	text-align: left;
+	margin-left: 10px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.app-error {
+    background-color: lightcoral;
+}
+
+// menu
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav {
+    a {
+        float: left;
+    //    color: #f2f2f2;
+        text-align: center;
+        padding: 0 10px 0 10px;
+        text-decoration: none;
+        font-size: 17px;
+        border: 1px solid white;
+    }
+
+    a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+    }
+
+    a:active {
+    background-color: #4CAF50;
+//    color: white;
+    }
+}
+
+// \menu
+td span {
+     color: white;
+ }

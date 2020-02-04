@@ -1,0 +1,23 @@
+<div class="container">
+    <a href="https://google.com">test de lien</a>
+</div>
+<div class="container">
+    <legend>directives-angular : exercices 1</legend>
+    <div *ngIf="condition; else displayLorempIpsum">Condition vraie.</div>
+    <ng-template #displayLorempIpsum>condition fausse test lorem ipsum etc.</ng-template>
+</div>
+<div class="container">
+    <legend>directives-angular : exercices 2</legend>
+    <input type="text" [(ngModel)]="inputValue">
+    <p>{{inputValue}}</p>
+</div>
+<div class="container">
+    <legend>directives-angular : exercices 3</legend>
+    <button (click)="counter = counter + 1">compte</button>
+    <p>{{counter}}</p>
+    <!-- <select [(ngModel)]="itemValue" (change) = "displayConsole('itemValue : ' + itemValue + ' event : ' + $event)"> -->
+    <select [(ngModel)]="itemValue" (change) = "displayConsole($event)">
+            <option *ngFor="let item of selectList" >{{item}}</option>
+    </select>
+    <p>{{itemValue}}</p>
+</div>

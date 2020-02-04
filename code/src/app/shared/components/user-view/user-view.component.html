@@ -1,0 +1,7 @@
+<p>user-view works!</p>
+
+<div class="container"><legend>UserViewComponent</legend>
+    <app-user-table (sendDetails)="receiveDataFromChild($event)"></app-user-table>
+    <!-- cliquer sur le dernier, sachant que son index correspond à celui de la liste des objets... -->
+    <div class='container' ><legend>Json de l'user cliqué <br>(cliquer le dernier car <span style="white-space: nowrap;">api serveur</span> cagneux)</legend><p>{{userToSend | json}}</p></div>
+</div>

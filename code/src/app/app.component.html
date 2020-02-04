@@ -1,0 +1,30 @@
+<nav>
+    <div class="topnav">
+        <a title="Exo" [routerLink]="['/first-test']">First-test</a>
+        <a [routerLink]="['/expression']">Expression</a>
+        <a [routerLink]="['/directive-angular']">Directive</a>
+        <a [routerLink]="['/directive-angular-exercice']">Directive exercice</a>
+        <a [routerLink]="['/typage']">Typage</a>
+        <a [routerLink]="['/typage-exercice']">Typage exercice</a>
+        <a [routerLink]="['/parent']">Parent</a>
+        <a [routerLink]="['/test-observable']">Observable</a>
+        <a [routerLink]="['/test-webservice']">test webservice</a>
+
+        <div class="color-blue">
+            <a [routerLink]="['/eloge-de-grandeur']">Text Color Component exercice</a>
+            <a [routerLink]="['/shopping']">Shopping</a>
+            <a [routerLink]="['/user']">User</a>
+            <a [routerLink]="['/user-observable']">Observable</a>
+            <a [routerLink]="['/display-user']">Afficher User</a>
+        </div>
+        <label>
+            <select [(ngModel)]="userSelected" (change) = "displayUser(userSelected)">
+                <option *ngFor="let item of listeUsersValue; index as i" [ngValue]="item" >{{item.name}}</option>
+            </select>
+        </label>
+    </div>
+</nav>
+
+<app-display-select></app-display-select>
+
+<router-outlet></router-outlet>
